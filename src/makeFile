@@ -1,0 +1,43 @@
+JFLAGS = -g
+JC = javac
+JVM= java 
+
+.SUFFIXES: .java .class
+
+.java.class:
+	$(JC) $(JFLAGS) $*.java
+
+
+CLASSES = \
+	Main_menu.java \
+	Menu2.java \
+	Menu2Test.java \
+	Menu2Survey.java \
+	Menu3.java \
+	MultiChoiceQuestion.java \
+	Question.java \
+	QuestionSheet.java \
+	EssayQuestion.java \
+	RankingQuestion.java \
+	TestEssayQuestion.java \
+	TestMultiChoiceQuestion.java \
+	TestShortQuestion.java \
+	TestTFChoiceQuestion.java \
+	TestMatchingQuestion.java \
+	TestRankingQuestion.java \
+	MatchingQuestion.java \
+	TFChoiceQuestion.java \
+	ShortQuestion.java
+ 
+
+MAIN = Main_menu
+
+default: run
+
+classes: $(CLASSES:.java=.class)
+
+run: classes
+	$(JVM) $(MAIN)
+
+clean:
+	$(RM) *.class

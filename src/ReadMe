@@ -1,0 +1,9 @@
+This is a part of Final project Survey/Test creater app and also consider as HW2. 
+
+This cover most of the requirment in HW2 and there is some notifcation before testing:
+1) It currently not able to handle invalid input. So if the input failed the request it will need to start over the program
+2) When entering the input for the choice/ranking question it should be numbers that repersent the the choice.
+3) For the T/F question 1 is stand for T and 2 is stand for F so it also need to enter 1/2
+4) In matching question please enter QUIT when you want quit entering matching option if you dont want quit just simply hit ENTER then enter your matching input.
+
+For any other question please email yc552@drexel.edu
